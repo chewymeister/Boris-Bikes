@@ -1,23 +1,35 @@
+require_relative './bike.rb'
+
 class Station
+ 
+ attr_reader :station_max
 
-    # attr_accessor 
-
-	def initialize(amount_of_bikes,station_max)
-		@amount_of_bikes = amount_of_bikes
+	def initialize(station_max)
 		@station_max = station_max
+		@bike_list = ['bike','bike','bike','bike']
 	end
+	def release_a_bike(bike_list,bike)
+		# bike=Bike.new
+		if bike.condition?
+		@bike_list.pop 
+		else
+			return nil
 
-	def release_a_bike
+		end
+	end
+	def receive_a_bike
+		amount_of_bikes=@bike_list.count
+		return nil if station_full?
 		@bike
 	end
-
-	def receive_a_bike(amount_of_bikes,station_max)
-		return nil if station_full?(amount_of_bikes,station_max)
-		@bike
+	def station_full?
+		amount_of_bikes=@bike_list.count
+		amount_of_bikes == @station_max
 	end
-
-	def station_full?(amount_of_bikes,station_max)
-		amount_of_bikes == station_max
-	end
-
 end
+   
+
+
+
+
+    # attr_accessor :bike
