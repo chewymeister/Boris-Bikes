@@ -14,7 +14,7 @@ describe Rider do
 	it 'has a bike after renting'do
 		station = double(:station,{release_a_bike: :bike})
 		rider.rent_a_bike(station)
-		expect(rider).to have_a_bike
+		expect(rider).to have_a_bike           
 	end
 
 
