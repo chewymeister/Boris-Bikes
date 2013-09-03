@@ -1,0 +1,55 @@
+Frank is the User.
+Frank is at Victoria Station. He needs to get to London Bridge.
+Frank doesn't like people so he would like to rent a bike.
+He goes to the bike station at Victoria and sees that there are 5 bikes in the station(out of 50 docks).
+Frank needs to be able to remove the bike from the station and ride to London Bridge  /// Green
+Frank needs to use a bike that isn't broken.  /// Green
+frank find a bike that is not broken.
+frank rides to london bridge
+Frank parks the bike
+
+
+Rider will take out the bike.
+Rider will dock the bike.
+/////Frank realised that the bike chain is broken,////////// Yellow
+/////Frank tell the station that he broke the bike. :)////// Yellow
+
+
+
+
+Joe is the driver of a van taking care of a region in centre london (includs london bridge)
+he need to routinely check the states of bikes.  //Green
+Before he goes to his assigned station, he checks the report given to him by the system.  //Green
+If the report says the station contains less than 10 bikes then he must go the GARAGE and bring enough bikes to fill the station. //Green
+he goes to london bridge to perfome his check
+If he finds a broken bike he needs to take the broken bike to the garage. // Green
+
+
+//////Before he goes, he must ask the system whether or not there are enough bikes in the garage.  //Yellow
+
+
+
+
+Garage:
+garage contains spare bikes.// In Green, bikes are unlimited.
+Garage fixs broken bikes.
+
+
+Garage keeps a record of amount of bikes it contains./// Yellow
+If garage contains less than 30 bikes, it must report to the system./// Yellow 
+
+System
+System will report to Joe when stations have bikes less than 10./// Green
+
+
+System knows whether a station has a broken bike or not./// Yellow
+System sends a report to Joe, when there is a broken bike in the system./// Yellow
+System needs to keep a record of all the stations in Central London and a record of the number of bikes they contain.
+System needs to keep a record of drivers and which stations they are responsible for.
+
+
+
+station:
+send alert message to system that bike is less than 10.
+Send an update of amount of bikes every time a bike is removed or added.
+(send alert message  to system for alerting message)
